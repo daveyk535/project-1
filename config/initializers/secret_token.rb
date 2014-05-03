@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-BurgerBuddy::Application.config.secret_key_base = '37c730075f04f79fbc53a3509d0c41d94d20ef84e6339f3eb5ce0f49fdc13d165a5ece87f9b91da981b6cb7a4ca4cb3a383fc9de743ef256494d53e21fa74ef0'
+BurgerBuddy::Application.config.secret_token = ENV['SECRET_KEY_BASE']
