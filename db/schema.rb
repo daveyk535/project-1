@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140504211555) do
+ActiveRecord::Schema.define(version: 20140505183415) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -26,6 +26,20 @@ ActiveRecord::Schema.define(version: 20140504211555) do
     t.string   "zip"
     t.string   "website"
     t.string   "phone"
+  end
+
+  create_table "reviews", force: true do |t|
+    t.decimal  "patty"
+    t.decimal  "bun"
+    t.decimal  "bun_patty_ratio"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.decimal  "toppings"
+    t.decimal  "service"
+    t.decimal  "total"
+    t.integer  "user_Id"
+    t.integer  "burger_Id"
+    t.text     "comments"
   end
 
 end
