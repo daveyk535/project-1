@@ -1,8 +1,11 @@
 BurgerBuddy::Application.routes.draw do
   resources :users
-  get "burgers/new"
+  resources :sessions, only: [:new, :create, :destroy]
   
-  root 'burgers#index'
-
   match '/signup', to: 'users#new', via: 'get'
+  match '/signin', to: 'sessions#new', via: 'get'
+  match '/signout', to: 'sessions#destroy', via: 'delete'
+
+  root 'burgers#index'
+  
 end
