@@ -6,6 +6,9 @@ gem 'rails', '4.0.4'
 # Use PostGres as the DB
 gem 'pg'
 
+#Use bcrypt for password hash
+gem 'bcrypt-ruby','3.1.2'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.2'
 
