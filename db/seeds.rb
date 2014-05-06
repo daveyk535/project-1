@@ -6,10 +6,16 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-burgers = Burger.create(burger_name: 'le grande', price:20.00, protein: 'grass-fed proprietary', bun_type: 'Brioche', grass_fed: true, description: 'Grass-fed proprietary grind, Marin brie, roasted onion, smoked bacon, brioche', special_notes: 'Add sunny-side-up Petaluma egg for $2')
+users = User.create(first_name: "Joel", last_name: "Korsunsky", email: "jkorsunsky@cox.net", twitter: "@jimmy", password: "foobar", password_confirmation: "foobar")
 
-users = User.create(first_name: "Joel", last_name: "Korsunsky", email: "jkorsunsky@cox.net")
+users = User.create(first_name: "David", last_name: "Korsunsky", email: "davekorsunsky@gmail.com", twitter: "@phase2mind", password: "foobar", password_confirmation: "foobar")
 
+# "burger_name", "price", "protein", "bun_type", "grass_fed", "gluten_free", "average_score", "num_reviews", "description", "special_notes" 
+
+burgers = Burger.create(burger_name: 'le grande', price:20.00, protein: 'grass-fed proprietary', bun_type: 'Brioche', grass_fed: true, gluten_free: false, description: 'Grass-fed proprietary grind, Marin brie, roasted onion, smoked bacon, brioche', special_notes: 'Add sunny-side-up Petaluma egg for $2')
+
+# "patty", "bun", "bun_patty_ratio", "toppings", "service", "total", "user_Id", "burger_Id", "comments", "side"
 reviews = Review.create(patty: 5, bun: 3, bun_patty_ratio: 4, toppings: 3.5, service: 4.5, side: 5, comments: "Killer", burger_Id: 3, user_Id: 2)
 
-restaurant = Restaurant.create(name: "Wayfare Tavern", address: "558 Sacramento st.", city: "San Francisco", state: "CA", zip: "94111", website: "http://wayfaretavern.com", phone: "415-772-9060")
+# "name", "address", "city", "state", "zip", "website", "phone"
+restaurants = Restaurant.create(name: "Wayfare Tavern", address: "558 Sacramento st.", city: "San Francisco", state: "CA", zip: "94111", website: "http://wayfaretavern.com", phone: "415-772-9060")

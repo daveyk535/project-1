@@ -1,6 +1,6 @@
 BurgerBuddy::Application.routes.draw do
+  resources :users
   get "burgers/new"
-  get "users/new"
   
   root 'burgers#index'
 
