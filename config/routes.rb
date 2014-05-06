@@ -3,5 +3,6 @@ BurgerBuddy::Application.routes.draw do
   get "users/new"
   
   root 'burgers#index'
-  
+
+  match '/signup', to: 'users#new', via: 'get'
 end
