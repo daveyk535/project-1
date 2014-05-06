@@ -13,5 +13,10 @@ require 'spec_helper'
   #   @user = User.create(first_name: "a" * 51)
   #   @user.should_not be_valid
 
-#test e-mail and last name
+#test e-mail presence, format, uniqueness incuding case-sensitivity (FactoryGirl, cook_cook_with auth)
+# test last name presence and length
+#test password_digest, password and password_confirmation for presence and password mismatch (Listing 6.25)
+#test password length (6 chars)
 #test for length (too short and too long)
+
+#rails generate migration add_index_to_users_email
