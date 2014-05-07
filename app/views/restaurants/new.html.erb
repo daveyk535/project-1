@@ -1,1 +1,16 @@
 <h1> This page is for adding a new restaurant/burger to the database </h1>
+
+<h1>Search for restaurant:</h1>
+
+<%= form_for @restaurant do |f| %>
+  <%= f.label :name %>:
+  <%= f.text_field :name %><br />
+
+  <%= f.label :city %>:
+  <%= f.text_field :city %><br />
+
+  <%= f.label :zip %>:
+  <%= f.text_field :zip %><br />
+
+  <%= f.submit %>
+<% end %>

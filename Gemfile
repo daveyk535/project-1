@@ -9,6 +9,10 @@ gem 'sprockets', '2.11.0'
 # Use PostGres as the DB
 gem 'pg'
 
+gem 'yelpster'
+
+gem 'typhoeus'
+
 #Use bcrypt for password hash
 gem 'bcrypt-ruby','3.1.2'
 
