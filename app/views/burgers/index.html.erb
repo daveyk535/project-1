@@ -1,4 +1,25 @@
+<%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
 <h1> Welcome to Burger Spectator </h1>
 
-<%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
-</div>
+<table class="table .table-striped">
+	<tr>
+		<th>Burger name</th>
+  	<th>Restaurant</th> 
+  	<th>Average score</th>
+	</tr>
+<% @burgers.each do |burger| %>
+  <tr>
+    <td>
+      <p class="lead"><%= link_to(burger.burger_name) %></p>
+    </td>
+    <td>
+      <p class="lead"><%= link_to(burger.restaurant.name) %></p>
+    </td>
+    <td>
+    	<p class="lead"><%= burger.average_score %></p>
+    </td>
+</tr>
+<% end %>
+</table>
+
+
