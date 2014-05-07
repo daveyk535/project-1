@@ -1,8 +1,7 @@
 
 <%= gravatar_for @user %>
-<ul>
-	<li><%= @user.first_name %></li>
-	<li><%= @user.last_name %></li>
-	<li><%= @user.email %></li>
-	<li><%= @user.twitter %></li>
-</ul>
+<table>
+	<tr><td><%= @user.first_name %> <%= @user.last_name %></td></tr>
+	<tr><td><%= @user.email %></td></tr>
+	<tr><td><%= @user.twitter %></td></tr>
+</table>

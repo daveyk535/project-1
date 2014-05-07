@@ -14,6 +14,11 @@ users = User.create(first_name: "David", last_name: "Korsunsky", email: "davekor
 
 burgers = Burger.create(burger_name: 'le grande', price:20.00, protein: 'grass-fed proprietary', bun_type: 'Brioche', grass_fed: true, gluten_free: false, description: 'Grass-fed proprietary grind, Marin brie, roasted onion, smoked bacon, brioche', special_notes: 'Add sunny-side-up Petaluma egg for $2')
 
+burgers = Burger.create(burger_name: 'Drive-in Cheeseburger', price:6.00, protein: 'certified angus', bun_type: 'Acme', grass_fed: false, gluten_free: false, description: '1/3 lb certified angus, double am cheese, griddled onions, pickles, lettuce, tomato, 1000 island, acme bun', special_notes: 'Crazy Daves Double 8.00')
+
+
+
+
 # "patty", "bun", "bun_patty_ratio", "toppings", "service", "total", "user_Id", "burger_Id", "comments", "side"
 reviews = Review.create(patty: 5, bun: 3, bun_patty_ratio: 4, toppings: 3.5, service: 4.5, side: 5, comments: "Killer", burger_Id: 3, user_Id: 2)
 
