@@ -1,0 +1,31 @@
+<h1> Submit Reviews </h1>
+
+<div class="row">
+  <div class="span6 offset3">
+    <%= form_for(@burger) do |f| %>
+    	<%#= render 'shared/error_messages' %>
+
+      <%= f.label :burger_name %>
+      <%= f.text_field :burger_name %></br>
+
+      <%= f.submit "Submit", class: "btn btn-large btn-primary" %>
+    <% end %>
+  </div>
+</div>
+
+
+
+<div class="row">
+  <div class="span6 offset3">
+		<%= form_for(@review) do |f| %>
+		
+			<%= f.label :patty %>
+    	<%= f.text_field :patty %></br>
+
+    	<%= f.label :bun %>
+    	<%= f.text_field :bun %></br>
+
+    	<%= f.submit "Submit Review", class: "btn btn-large btn-primary" %>
+		<% end %>
+  </div>
+</div>
