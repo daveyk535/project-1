@@ -5,7 +5,8 @@
 				<% @response.businesses.each do |business| %>
 				<tr>
 					<td>
-						<%= radio_button_tag(:name, "name") %>
+						<%= radio_button_tag(:name, business.name) %>
+						<%= f.hidden_field :city, :value =>business.location.city %>
 						<%= label_tag(:name, business.name) %>
 					</td>
 				</tr>

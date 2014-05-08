@@ -42,6 +42,8 @@ input {
   @extend .error;
 }
 
+/*CSS for the restaurant views:*/
+/*search.html.erb: */
 .restaurant_table {
   font-size: 30px;
 }
