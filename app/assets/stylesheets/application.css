@@ -41,3 +41,17 @@ input {
   @extend .control-group;
   @extend .error;
 }
+
+.restaurant_table {
+  font-size: 30px;
+}
+
+.restaurant {
+  width: 718px;
+  height: 200px;
+  text-align: left;
+}
+
+.table-striped {
+  height: 150px;
+}
