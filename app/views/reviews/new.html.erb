@@ -1,32 +1,24 @@
 <h1> Submit Review </h1>
 
 <h4>Select a restaurant from the system</h4>
+
   <%= form_for @restaurant, method: "post" do |f| %>
     <%= f.label :name %></br>
     <% restaurants = Restaurant.all.map {|restaurant| [restaurant.name, restaurant.id] }%>
-    <%= f.select(:name, restaurants)  %> </br></br>
+    <%= f.select(:name, restaurants)  %> </br>
     <%#= f.submit "Add Restaurant", class: "button" %>
   <% end %>
 
-<%= form_for @burger, method: "post" do |f| %>
-    
-    <%#= f.submit "Add Burger", class: "button" %>
-  <% end %>
+	<%= form_for(@review) do |f| %>
+		
+    <%= f.label :burger_name, "Burger" %></br>
+    <% burgers = Burger.all.map {|burger| [burger.burger_name, burger.id] }%>
+    <%= f.select(:burger_id, burgers)  %> </br>
 
- 
-<!-- Scorecard for reviewing burger -->
-<!-- <div class="row"> -->
+ <p>Can't find your burger? Add it <%= link_to "here.", new_restaurant_path %></br></br>
+
   <div class="row">
   <div class="col-xs-2">
-  <!-- <div class="form-horizontal"> -->
-		<%= form_for(@review) do |f| %>
-		
-<%= f.label :burger_name, "Burger" %></br>
-    <% burgers = Burger.all.map {|burger| [burger.burger_name, burger.id] }%>
-    <%= f.select(:burger_Id, burgers)  %> </br></br>
-
- <p>Can't find your burger? Add it <%= link_to "here.", new_restaurant_path %>
-  
 			<%= f.label :patty %>
     	<%= f.select :patty, [ 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5 ], :prompt => 'Select One' %>
 
@@ -45,9 +37,12 @@
 
       <%= f.label :service %>
       <%= f.select :service, [ 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5 ], :prompt => 'Select One' %>
-
-    	<%= f.submit "Submit Review", class: "btn btn-large btn-primary" %></br></br>
-		<% end %>
   </div>
 </div>
-<!-- </div> -->
+
+      <%= f.label :comments %>
+      <%= f.text_field :comments %></br>
+
+      <%= f.submit "Submit Review", class: "btn btn-large btn-primary" %></br></br>
+<% end %>
+

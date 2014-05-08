@@ -53,8 +53,8 @@ ActiveRecord::Schema.define(version: 20140507010218) do
     t.decimal  "toppings"
     t.decimal  "service"
     t.decimal  "total"
-    t.integer  "user_Id"
-    t.integer  "burger_Id"
+    t.integer  "user_id"
+    t.integer  "burger_id"
     t.text     "comments"
     t.decimal  "side"
   end
