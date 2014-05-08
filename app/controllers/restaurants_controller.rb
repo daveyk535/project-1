@@ -13,6 +13,17 @@ class RestaurantsController < ApplicationController
   end
 
   def create
-    # @restaurant = Restaurant.create
+    @restaurant = Restaurant.new(restaurant_params)
+  end
+
+  def search
+    parameters = { term: params[:term] }
+    #binding.pry
+    # render json: Yelp.client.search('San Francisco', parameters)
   end
 end
+
+private
+    def restaurant_params
+      params.require(:restaurant).permit(:name, :address, :city, :state, :zip, :website, :phone)
+    end

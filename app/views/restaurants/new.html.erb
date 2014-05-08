@@ -1,16 +1,9 @@
-<h1> This page is for adding a new restaurant/burger to the database </h1>
+<h3>Search for new restaurant</h4>
 
-<h1>Search for restaurant:</h1>
+<%= form_tag("/search/restaurants", method: "get") do %>
+    <%= text_field_tag(:name, "Enter Restaurant Name") %>
+    <%= text_field_tag(:zip, "Enter Zip") %>
+    <%= submit_tag("Search", class: "button") %>
+    <% end %>
 
-<%= form_for @restaurant do |f| %>
-  <%= f.label :name %>:
-  <%= f.text_field :name %><br />
 
-  <%= f.label :city %>:
-  <%= f.text_field :city %><br />
-
-  <%= f.label :zip %>:
-  <%= f.text_field :zip %><br />
-
-  <%= f.submit %>
-<% end %>

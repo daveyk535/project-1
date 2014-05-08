@@ -11,6 +11,8 @@ gem 'pg'
 
 gem 'yelpster'
 
+gem 'yelp'
+
 gem 'typhoeus'
 
 #Use bcrypt for password hash

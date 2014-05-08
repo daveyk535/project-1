@@ -4,6 +4,8 @@ BurgerBuddy::Application.routes.draw do
   resources :reviews
   resources :restaurants
   resources :burgers
+
+  get '/search/restaurants', to: 'restaurants#search'
   
   match '/signup', to: 'users#new', via: 'get'
   match '/signin', to: 'sessions#new', via: 'get'
