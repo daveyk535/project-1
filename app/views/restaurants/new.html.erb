@@ -1,9 +1,10 @@
 <h3>Search for new restaurant</h4>
 
+<!-- Create a search form, route to the search method on the restaurants contoller for Yelp! API lookup -->
 <%= form_tag("/search/restaurants", method: "get") do %>
-    <%= text_field_tag(:term, "Enter Restaurant Name") %>
-    <%= text_field_tag(:postal_code, "Enter Zip") %>
-    <%= submit_tag("Search", class: "button") %>
-    <% end %>
+  <%= text_field_tag(:term, "Enter Restaurant Name") %>
+  <%#= text_field_tag(:postal_code, "Enter Zip") %>
+  <%= submit_tag("Search", class: "btn btn-large btn-primary""button") %>
+<% end %>
 
 
