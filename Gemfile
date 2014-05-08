@@ -11,7 +11,7 @@ gem 'pg'
 
 gem 'yelpster'
 
-gem 'yelp'
+gem 'yelp', require: 'yelp'
 
 gem 'typhoeus'
 

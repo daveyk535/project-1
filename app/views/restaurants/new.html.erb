@@ -1,8 +1,8 @@
 <h3>Search for new restaurant</h4>
 
 <%= form_tag("/search/restaurants", method: "get") do %>
-    <%= text_field_tag(:name, "Enter Restaurant Name") %>
-    <%= text_field_tag(:zip, "Enter Zip") %>
+    <%= text_field_tag(:term, "Enter Restaurant Name") %>
+    <%= text_field_tag(:postal_code, "Enter Zip") %>
     <%= submit_tag("Search", class: "button") %>
     <% end %>
 

@@ -9,38 +9,45 @@
   <% end %>
 
 <%= form_for @burger, method: "post" do |f| %>
-    <%= f.label :burger_name %></br>
-    <% burgers = Burger.all.map {|burger| [burger.burger_name, burger.id] }%>
-    <%= f.select(:burger_name, burgers)  %> </br></br>
+    
     <%#= f.submit "Add Burger", class: "button" %>
   <% end %>
 
-  <p>Can't find your burger? Add it <%= link_to "here.", new_restaurant_path %>
-
+ 
 <!-- Scorecard for reviewing burger -->
 <!-- <div class="row"> -->
-  <div class="form-horizontal">
+  <div class="row">
+  <div class="col-xs-2">
+  <!-- <div class="form-horizontal"> -->
 		<%= form_for(@review) do |f| %>
 		
+<%= f.label :burger_name, "Burger" %></br>
+    <% burgers = Burger.all.map {|burger| [burger.burger_name, burger.id] }%>
+    <%= f.select(:burger_Id, burgers)  %> </br></br>
+
+ <p>Can't find your burger? Add it <%= link_to "here.", new_restaurant_path %>
+  
 			<%= f.label :patty %>
-    	<%= f.number_field :patty %></br>
+    	<%= f.select :patty, [ 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5 ], :prompt => 'Select One' %>
 
     	<%= f.label :bun %>
-    	<%= f.text_field :bun %></br>
+    	<%#= f.text_field :bun %></br>
+      <%= f.select :bun, [ 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5 ], :prompt => 'Select One' %>
 
       <%= f.label :bun_patty_ratio %>
-      <%= f.text_field :bun_patty_ratio %></br>
+      <%= f.select :bun_patty_ratio, [ 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5 ], :prompt => 'Select One' %>
 
       <%= f.label :toppings %>
-      <%= f.text_field :toppings %></br>
+      <%= f.select :toppings, [ 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5 ], :prompt => 'Select One' %>
 
       <%= f.label :side %>
-      <%= f.text_field :side %></br>
+      <%= f.select :side, [ 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5 ], :prompt => 'Select One' %>
 
       <%= f.label :service %>
-      <%= f.text_field :service %></br>
+      <%= f.select :service, [ 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5 ], :prompt => 'Select One' %>
 
     	<%= f.submit "Submit Review", class: "btn btn-large btn-primary" %></br></br>
 		<% end %>
   </div>
+</div>
 <!-- </div> -->
