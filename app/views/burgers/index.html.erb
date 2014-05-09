@@ -16,7 +16,8 @@
 <% @burgers.each do |burger| %>
   <tr>
     <td>
-      <p class="lead"><%= link_to(burger.burger_name) %></p>
+      <!-- <p class="lead"><%= link_to(burger.burger_name) %></p> -->
+      <p class="lead"><%= link_to (burger.burger_name), burger_path(burger.id) %></p>
     </td>
     <td>
       <p class="lead"><%= link_to(burger.restaurant.name) %></p>

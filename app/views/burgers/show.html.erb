@@ -1,1 +1,52 @@
-show.html.erb
+<%#= @burger.inspect %>
+
+<div class="center">
+<h1><%= @burger.burger_name %> - <%= @burger.restaurant.name %> </h1>
+<h4>Description: <%= @burger.description %></h4>
+<h4>Notes: <%= @burger.special_notes %></h4>
+</div>
+
+<div class="row">
+	<div class="col-xs-6	">
+		<table class="table table-bordered">
+  		<tr class="lead">  
+  			<td>Burger name</td><td> <%= @burger.burger_name %></tr>
+			</tr>
+			<tr class="lead">  
+  			<td>Restaurant</td><td> <%= @burger.restaurant.name %></tr>
+			</tr>
+			<tr class="lead">  
+  			<td>Price</td><td> $<%= @burger.price %>0</tr>
+			</tr>
+			<tr class="lead">  
+  			<td>Protein type</td><td> <%= @burger.protein %></tr>
+			</tr>
+			<tr class="lead">  
+  			<td>Bun type</td><td> <%= @burger.bun_type %></tr>
+			</tr>
+			<tr class="lead">  
+  			<td>Grass-fed</td><td> <%= @burger.grass_fed %></tr>
+			</tr>
+			<tr class="lead">  
+  			<td>Gluten-free</td><td> <%= @burger.gluten_free %></tr>
+			</tr>
+			<tr class="lead">  
+  			<td>Protein type</td><td> <%= @burger.protein %></tr>
+			</tr>
+			<tr class="lead">  
+  			<td>Organic toppings</td><td></tr>
+			</tr>
+			<tr class="lead">  
+  			<td>Nitrate-free bacon</td><td></tr>
+			</tr>
+		</table>
+	</div>
+</div>
+
+
+<!-- FOOTER -->
+<div class="center">
+<%= link_to "View Full Rankings", signup_path %></br></br>  
+<%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
+<%= link_to "Review a burger!", new_review_path, class: "btn btn-large btn-primary" %>
+</div>

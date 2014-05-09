@@ -10,4 +10,6 @@ class BurgersController < ApplicationController
   def show 
     @burger = Burger.find(params[:id])
   end
+
 end
+
