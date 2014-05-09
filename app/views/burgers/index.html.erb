@@ -1,5 +1,10 @@
-
+<div class="center">
 <h1> Welcome to BurgerBuddy </h1>
+</div>
+
+<div class="center">
+<h3> Current Standings - San Francisco </h3>
+</div>
 
 <!-- Show the rankings for the top 5 burgers in table format: -->
 <table class="table .table-striped">
@@ -23,5 +28,8 @@
 <% end %>
 </table>
 
+<div class="center">
+<%= link_to "View Full Rankings", signup_path %></br></br>  
 <%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
 <%= link_to "Review a burger!", new_review_path, class: "btn btn-large btn-primary" %>
+</div>

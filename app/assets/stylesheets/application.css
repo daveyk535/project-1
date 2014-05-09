@@ -56,3 +56,14 @@ input {
 .table-striped {
   height: 150px;
 }
+
+/*CSS for the review views:*/
+/*search.html.erb: */
+
+.review {
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+}

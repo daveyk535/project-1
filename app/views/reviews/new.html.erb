@@ -1,7 +1,9 @@
+<div class="center">
 <h1> Submit Review </h1>
-<h4>Select a restaurant from the system</h4>
+</div>
 
 <!-- Restaurant drop down -->
+<h4>Select a restaurant from the system:</h4>
 <%= form_for @restaurant, method: "post" do |f| %>
  <%= f.label :name %></br>
  <% restaurants = Restaurant.all.map {|restaurant| [restaurant.name, restaurant.id] }%>
@@ -10,6 +12,7 @@
 <% end %>
 
 <!-- Burger drop down. Note that the restaurant and burger drop downs are not linked up yet. In future, the only burgers that drop down should be the ones belonging to the restaurant which has been selected above. -->
+
 <%= form_for(@review) do |f| %>
   <%= f.label :burger_name, "Burger" %></br>
   <% burgers = Burger.all.map {|burger| [burger.burger_name, burger.id] }%>
@@ -19,6 +22,7 @@
  <p>Can't find your burger? Add it <%= link_to "here.", new_restaurant_path %></br></br>
 
 <!-- Create the form for reviewing the burger: -->
+  
   <div class="row">
     <div class="col-xs-2">
 			<%= f.label :patty %>
