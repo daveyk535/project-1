@@ -7,4 +7,7 @@ class BurgersController < ApplicationController
   def new
   end
 
+  def show 
+    @burger = Burger.find(params[:id])
+  end
 end
