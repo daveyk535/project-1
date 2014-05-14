@@ -19,59 +19,59 @@ I was able to register and review a burger on heroku
 
 #Review Rubric
 
-##Implementation Expecations
+##Implementation Expectations
 
 * Models & Data Relationships
 	* Expectation: At least 2 related models
 	* Review: ++Four models with several relationships
 * Handles Invalid Data
 	*  Expectation: Rails model validation for presence of necessary fields
-	* Review:__TODO__
+	* Review:Some validations but not widespread
 * Views & Templates	
 	*  Expectation: Form partial used, but other duplication still exists
-	* Review:__TODO__
+	* Review:Only form partials
 * Authentication
 	*  Expectation: Appropriate helper methods defined
-	* Review:__TODO__
+	* Review:++Gravatar
 * Authorization
 	* Expectation: Authorization scheme is well-thought out and used correctly.
-	* Review:__TODO__
+	* Review:++Home grown on MH tutorial!
 * API
 	*  Expectation: An API call was made.
-	* Review:__TODO__
+	* Review:Yelp!
 * Testing
 	*  Expectation: Includes request specs.
-	* Review:__TODO__
+	* Review:Some tests but wrong version
 * Heroku
 	*  Expectation: Project is hosted on Heroku
 	* Review: https://burgerbuddy.herokuapp.com/
 * JavaScript/jQuery
 	* Expectation: JS/jQuery is used to handle at least one interactive event after the window loads
-	* Review:__TODO__
+	* Review:--Not used
 
 ##Code Quality Expectations
 
 * Test Driven
 	* Expectation: In addition to models, requests have been tested for valid 	responses and valid data
-	* Review:__TODO__
+	* Review:--No
 * Flexible / extensible / scalable
 	* Expectation: No database calls inside a loop
-	* Review:__TODO__
+	* Review:Burger restaurants
 * Well-commented
 	* Expectation: Comments are not sporadic. Comments address the "why".
-	* Review:__TODO__
+	* Review:Some comments
 * Well-formatted, Clean Project
 	* Expectation: No mix of tabs and spaces
-	* Review:__TODO__
+	* Review:Pretty good
 * Follows naming conventions
 	* Expectation: Naming follows best practices (semantic variable naming)
-	* Review:__TODO__
+	* Review:++Yes
 * Secure
 	* Expectation: Authorization is implemented as well as authentication.  Athorization is achieved through controller methods or helpers that limit resources
-	* Review:__TODO__
+	* Review:--Not really
 * Documenting Work
 	* Expectation: Public presentation of work involving key aspects of development process
-	* Review:__TODO__
+	* Review:--Default Readme
 	
 
 

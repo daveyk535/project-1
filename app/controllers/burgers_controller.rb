@@ -1,7 +1,7 @@
 class BurgersController < ApplicationController
   
   def index
-    @burgers = Burger.all
+    @burgers = Burger.all.includes(:restaurant)
   end
 
   def new

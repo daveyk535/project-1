@@ -11,23 +11,23 @@
 <polygon fill="white" stroke="none" points="-4,4 -4,-690 328,-690 328,4 -4,4"/>
 <!-- Burger -->
 <g id="node1" class="node"><title>Burger</title>
-<path fill="none" stroke="black" d="M101.122,-251C101.122,-251 224.878,-251 224.878,-251 230.878,-251 236.878,-257 236.878,-263 236.878,-263 236.878,-465 236.878,-465 236.878,-471 230.878,-477 224.878,-477 224.878,-477 101.122,-477 101.122,-477 95.1221,-477 89.1221,-471 89.1221,-465 89.1221,-465 89.1221,-263 89.1221,-263 89.1221,-257 95.1221,-251 101.122,-251"/>
-<text text-anchor="middle" x="163" y="-461.8" font-family="Times,serif" font-size="14.00">Burger</text>
-<polyline fill="none" stroke="black" points="89.1221,-455 236.878,-455 "/>
-<text text-anchor="start" x="97.1221" y="-439.8" font-family="Times,serif" font-size="14.00">id :integer</text>
-<text text-anchor="start" x="97.1221" y="-425.8" font-family="Times,serif" font-size="14.00">burger_name :string</text>
-<text text-anchor="start" x="97.1221" y="-411.8" font-family="Times,serif" font-size="14.00">price :decimal</text>
-<text text-anchor="start" x="97.1221" y="-397.8" font-family="Times,serif" font-size="14.00">protein :string</text>
-<text text-anchor="start" x="97.1221" y="-383.8" font-family="Times,serif" font-size="14.00">bun_type :string</text>
-<text text-anchor="start" x="97.1221" y="-369.8" font-family="Times,serif" font-size="14.00">grass_fed :boolean</text>
-<text text-anchor="start" x="97.1221" y="-355.8" font-family="Times,serif" font-size="14.00">gluten_free :boolean</text>
-<text text-anchor="start" x="97.1221" y="-341.8" font-family="Times,serif" font-size="14.00">average_score :decimal</text>
-<text text-anchor="start" x="97.1221" y="-327.8" font-family="Times,serif" font-size="14.00">num_reviews :decimal</text>
-<text text-anchor="start" x="97.1221" y="-313.8" font-family="Times,serif" font-size="14.00">description :text</text>
-<text text-anchor="start" x="97.1221" y="-299.8" font-family="Times,serif" font-size="14.00">special_notes :text</text>
-<text text-anchor="start" x="97.1221" y="-285.8" font-family="Times,serif" font-size="14.00">created_at :datetime</text>
-<text text-anchor="start" x="97.1221" y="-271.8" font-family="Times,serif" font-size="14.00">updated_at :datetime</text>
-<text text-anchor="start" x="97.1221" y="-257.8" font-family="Times,serif" font-size="14.00">restaurant_id :integer</text>
+<path fill="none" stroke="black" d="M187.122,-251C187.122,-251 310.878,-251 310.878,-251 316.878,-251 322.878,-257 322.878,-263 322.878,-263 322.878,-465 322.878,-465 322.878,-471 316.878,-477 310.878,-477 310.878,-477 187.122,-477 187.122,-477 181.122,-477 175.122,-471 175.122,-465 175.122,-465 175.122,-263 175.122,-263 175.122,-257 181.122,-251 187.122,-251"/>
+<text text-anchor="middle" x="249" y="-461.8" font-family="Times,serif" font-size="14.00">Burger</text>
+<polyline fill="none" stroke="black" points="175.122,-455 322.878,-455 "/>
+<text text-anchor="start" x="183.122" y="-439.8" font-family="Times,serif" font-size="14.00">id :integer</text>
+<text text-anchor="start" x="183.122" y="-425.8" font-family="Times,serif" font-size="14.00">burger_name :string</text>
+<text text-anchor="start" x="183.122" y="-411.8" font-family="Times,serif" font-size="14.00">price :decimal</text>
+<text text-anchor="start" x="183.122" y="-397.8" font-family="Times,serif" font-size="14.00">protein :string</text>
+<text text-anchor="start" x="183.122" y="-383.8" font-family="Times,serif" font-size="14.00">bun_type :string</text>
+<text text-anchor="start" x="183.122" y="-369.8" font-family="Times,serif" font-size="14.00">grass_fed :boolean</text>
+<text text-anchor="start" x="183.122" y="-355.8" font-family="Times,serif" font-size="14.00">gluten_free :boolean</text>
+<text text-anchor="start" x="183.122" y="-341.8" font-family="Times,serif" font-size="14.00">average_score :decimal</text>
+<text text-anchor="start" x="183.122" y="-327.8" font-family="Times,serif" font-size="14.00">num_reviews :decimal</text>
+<text text-anchor="start" x="183.122" y="-313.8" font-family="Times,serif" font-size="14.00">description :text</text>
+<text text-anchor="start" x="183.122" y="-299.8" font-family="Times,serif" font-size="14.00">special_notes :text</text>
+<text text-anchor="start" x="183.122" y="-285.8" font-family="Times,serif" font-size="14.00">created_at :datetime</text>
+<text text-anchor="start" x="183.122" y="-271.8" font-family="Times,serif" font-size="14.00">updated_at :datetime</text>
+<text text-anchor="start" x="183.122" y="-257.8" font-family="Times,serif" font-size="14.00">restaurant_id :integer</text>
 </g>
 <!-- Review -->
 <g id="node3" class="node"><title>Review</title>
@@ -50,9 +50,9 @@
 </g>
 <!-- Burger&#45;&gt;Review -->
 <g id="edge1" class="edge"><title>Burger&#45;&gt;Review</title>
-<path fill="none" stroke="#b0c42d" d="M123.063,-243.189C120.835,-236.504 118.597,-229.79 116.374,-223.122"/>
-<ellipse fill="none" stroke="#b0c42d" cx="124.329" cy="-246.987" rx="4.00001" ry="4.00001"/>
-<polygon fill="#b0c42d" stroke="#b0c42d" points="116.294,-222.881 117.4,-211.971 114.713,-218.138 113.131,-213.394 113.131,-213.394 113.131,-213.394 114.713,-218.138 108.862,-214.817 116.294,-222.881 116.294,-222.881"/>
+<path fill="none" stroke="#87145f" d="M170.464,-245.885C165.055,-237.819 159.609,-229.697 154.212,-221.65"/>
+<ellipse fill="none" stroke="#87145f" cx="172.764" cy="-249.314" rx="4.00002" ry="4.00002"/>
+<polygon fill="#87145f" stroke="#87145f" points="154.18,-221.601 152.347,-210.789 151.395,-217.448 148.61,-213.296 148.61,-213.296 148.61,-213.296 151.395,-217.448 144.872,-215.802 154.18,-221.601 154.18,-221.601"/>
 </g>
 <!-- User -->
 <g id="node4" class="node"><title>User</title>
@@ -71,31 +71,37 @@
 </g>
 <!-- Burger&#45;&gt;User -->
 <g id="edge2" class="edge"><title>Burger&#45;&gt;User</title>
-<path fill="none" stroke="#f59104" d="M204.1,-241.134C209.379,-225.481 214.696,-209.716 219.732,-194.782"/>
-<polygon fill="#f59104" stroke="#f59104" points="204.042,-241.307 196.582,-249.344 202.444,-246.044 200.846,-250.782 200.846,-250.782 200.846,-250.782 202.444,-246.044 205.11,-252.22 204.042,-241.307 204.042,-241.307"/>
-<polygon fill="#f59104" stroke="#f59104" points="219.802,-194.575 227.262,-186.537 221.4,-189.837 222.998,-185.099 222.998,-185.099 222.998,-185.099 221.4,-189.837 218.734,-183.661 219.802,-194.575 219.802,-194.575"/>
+<path fill="none" stroke="#e92eef" d="M242.255,-240.611C242.226,-225.247 242.328,-209.784 242.56,-195.116"/>
+<polygon fill="#e92eef" stroke="#e92eef" points="242.255,-240.782 237.793,-250.799 242.274,-245.782 242.293,-250.782 242.293,-250.782 242.293,-250.782 242.274,-245.782 246.793,-250.765 242.255,-240.782 242.255,-240.782"/>
+<polygon fill="#e92eef" stroke="#e92eef" points="242.561,-195.097 247.242,-185.181 242.652,-190.098 242.742,-185.099 242.742,-185.099 242.742,-185.099 242.652,-190.098 238.243,-185.017 242.561,-195.097 242.561,-195.097"/>
 </g>
 <!-- Restaurant -->
 <g id="node2" class="node"><title>Restaurant</title>
-<path fill="none" stroke="black" d="M108.495,-515C108.495,-515 217.505,-515 217.505,-515 223.505,-515 229.505,-521 229.505,-527 229.505,-527 229.505,-673 229.505,-673 229.505,-679 223.505,-685 217.505,-685 217.505,-685 108.495,-685 108.495,-685 102.495,-685 96.4946,-679 96.4946,-673 96.4946,-673 96.4946,-527 96.4946,-527 96.4946,-521 102.495,-515 108.495,-515"/>
-<text text-anchor="middle" x="163" y="-669.8" font-family="Times,serif" font-size="14.00">Restaurant</text>
-<polyline fill="none" stroke="black" points="96.4946,-663 229.505,-663 "/>
-<text text-anchor="start" x="104.495" y="-647.8" font-family="Times,serif" font-size="14.00">id :integer</text>
-<text text-anchor="start" x="104.495" y="-633.8" font-family="Times,serif" font-size="14.00">name :string</text>
-<text text-anchor="start" x="104.495" y="-619.8" font-family="Times,serif" font-size="14.00">address :string</text>
-<text text-anchor="start" x="104.495" y="-605.8" font-family="Times,serif" font-size="14.00">city :string</text>
-<text text-anchor="start" x="104.495" y="-591.8" font-family="Times,serif" font-size="14.00">created_at :datetime</text>
-<text text-anchor="start" x="104.495" y="-577.8" font-family="Times,serif" font-size="14.00">updated_at :datetime</text>
-<text text-anchor="start" x="104.495" y="-563.8" font-family="Times,serif" font-size="14.00">state :string</text>
-<text text-anchor="start" x="104.495" y="-549.8" font-family="Times,serif" font-size="14.00">zip :string</text>
-<text text-anchor="start" x="104.495" y="-535.8" font-family="Times,serif" font-size="14.00">website :string</text>
-<text text-anchor="start" x="104.495" y="-521.8" font-family="Times,serif" font-size="14.00">phone :string</text>
+<path fill="none" stroke="black" d="M194.495,-515C194.495,-515 303.505,-515 303.505,-515 309.505,-515 315.505,-521 315.505,-527 315.505,-527 315.505,-673 315.505,-673 315.505,-679 309.505,-685 303.505,-685 303.505,-685 194.495,-685 194.495,-685 188.495,-685 182.495,-679 182.495,-673 182.495,-673 182.495,-527 182.495,-527 182.495,-521 188.495,-515 194.495,-515"/>
+<text text-anchor="middle" x="249" y="-669.8" font-family="Times,serif" font-size="14.00">Restaurant</text>
+<polyline fill="none" stroke="black" points="182.495,-663 315.505,-663 "/>
+<text text-anchor="start" x="190.495" y="-647.8" font-family="Times,serif" font-size="14.00">id :integer</text>
+<text text-anchor="start" x="190.495" y="-633.8" font-family="Times,serif" font-size="14.00">name :string</text>
+<text text-anchor="start" x="190.495" y="-619.8" font-family="Times,serif" font-size="14.00">address :string</text>
+<text text-anchor="start" x="190.495" y="-605.8" font-family="Times,serif" font-size="14.00">city :string</text>
+<text text-anchor="start" x="190.495" y="-591.8" font-family="Times,serif" font-size="14.00">created_at :datetime</text>
+<text text-anchor="start" x="190.495" y="-577.8" font-family="Times,serif" font-size="14.00">updated_at :datetime</text>
+<text text-anchor="start" x="190.495" y="-563.8" font-family="Times,serif" font-size="14.00">state :string</text>
+<text text-anchor="start" x="190.495" y="-549.8" font-family="Times,serif" font-size="14.00">zip :string</text>
+<text text-anchor="start" x="190.495" y="-535.8" font-family="Times,serif" font-size="14.00">website :string</text>
+<text text-anchor="start" x="190.495" y="-521.8" font-family="Times,serif" font-size="14.00">phone :string</text>
 </g>
 <!-- Restaurant&#45;&gt;Burger -->
 <g id="edge3" class="edge"><title>Restaurant&#45;&gt;Burger</title>
-<path fill="none" stroke="#5c0123" d="M163,-506.786C163,-500.437 163,-493.986 163,-487.513"/>
-<ellipse fill="none" stroke="#5c0123" cx="163" cy="-510.851" rx="4" ry="4"/>
-<polygon fill="#5c0123" stroke="#5c0123" points="163,-487.333 167.5,-477.333 163,-482.333 163,-477.333 163,-477.333 163,-477.333 163,-482.333 158.5,-477.333 163,-487.333 163,-487.333"/>
+<path fill="none" stroke="#a3ab69" d="M249,-506.786C249,-500.437 249,-493.986 249,-487.513"/>
+<ellipse fill="none" stroke="#a3ab69" cx="249" cy="-510.851" rx="4" ry="4"/>
+<polygon fill="#a3ab69" stroke="#a3ab69" points="249,-487.333 253.5,-477.333 249,-482.333 249,-477.333 249,-477.333 249,-477.333 249,-482.333 244.5,-477.333 249,-487.333 249,-487.333"/>
+</g>
+<!-- User&#45;&gt;Burger -->
+<g id="edge4" class="edge"><title>User&#45;&gt;Burger</title>
+<path fill="none" stroke="#43526a" d="M255.412,-193.427C255.664,-208.594 255.775,-224.656 255.745,-240.611"/>
+<ellipse fill="none" stroke="#43526a" cx="255.332" cy="-189.098" rx="4" ry="4"/>
+<polygon fill="#43526a" stroke="#43526a" points="255.745,-240.782 251.207,-250.765 255.726,-245.782 255.707,-250.782 255.707,-250.782 255.707,-250.782 255.726,-245.782 260.207,-250.799 255.745,-240.782 255.745,-240.782"/>
 </g>
 </g>
 </svg>
