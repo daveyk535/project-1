@@ -1,5 +1,4 @@
 class RestaurantsController < ApplicationController
-
   def index
     @restaurants = Restaurant.all
   end
@@ -8,13 +7,13 @@ class RestaurantsController < ApplicationController
     @restaurant = Restaurant.new
   end
 
-  def show 
+  def show
     @restaurant = Restaurant.find(params[:id])
   end
 
   def create
     @restaurant = Restaurant.new
-    @restaurant.update(name: params[:name], city: params[:restaurant][:city]) 
+    @restaurant.update(name: params[:name], city: params[:restaurant][:city])
     redirect_to @restaurant
   end
 
@@ -25,12 +24,10 @@ class RestaurantsController < ApplicationController
   end
 
   private
-    def restaurant_params
-      params.require(:restaurant).permit(:name)#, :address, :city, :state, :zip, :website, :phone)
-    end
-
+  def restaurant_params
+    params.require(:restaurant).permit(:name)# , :address, :city, :state, :zip, :website, :phone)
+  end
 end
-
 
 # [5] pry(#<RestaurantsController>)> @response.businesses[0].location.city
 # => "San Francisco"

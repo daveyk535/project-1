@@ -1,5 +1,4 @@
 class ReviewsController < ApplicationController
-
   def new
     @review = Review.new
     @restaurant = Restaurant.new
@@ -22,4 +21,3 @@ class ReviewsController < ApplicationController
     params.require(:review).permit(:patty, :bun, :bun_patty_ratio, :toppings, :service, :side, :total, :comments)
   end
 end
-

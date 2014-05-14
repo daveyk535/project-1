@@ -17,9 +17,7 @@ module SessionsHelper
     !current_user.nil?
   end
 
-  def current_user=(user)
-    @current_user = user
-  end
+  attr_writer :current_user
 
   def current_user
     remember_token = User.digest(cookies[:remember_token])

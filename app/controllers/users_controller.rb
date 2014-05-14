@@ -1,5 +1,4 @@
 class UsersController < ApplicationController
-
   def show
     @user = User.find(params[:id])
   end
@@ -12,10 +11,10 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       sign_in @user
-      flash[:success] = "Welcome to BurgerBuddy!"
+      flash[:success] = 'Welcome to BurgerBuddy!'
       redirect_to @user
     else
-      flash[:error] = "Failed to create account.  Try again."
+      flash[:error] = 'Failed to create account.  Try again.'
       render 'new'
     end
   end
@@ -29,7 +28,6 @@ class UsersController < ApplicationController
     @user.update_attributes(user_params)
     redirect_to @user
   end
-
 
   private
   def user_params

@@ -1,5 +1,4 @@
 class BurgersController < ApplicationController
-  
   def index
     @burgers = Burger.all.includes(:restaurant)
   end
@@ -7,9 +6,7 @@ class BurgersController < ApplicationController
   def new
   end
 
-  def show 
+  def show
     @burger = Burger.find(params[:id])
   end
-
 end
-
