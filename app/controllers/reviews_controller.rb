@@ -17,7 +17,7 @@ class ReviewsController < ApplicationController
     @review.total = params["review"]["patty"].to_i + params["review"]["bun"].to_i + params["review"]["bun_patty_ratio"].to_i + params["review"]["toppings"].to_i + params["review"]["wow_factor"].to_i
     #Increment num_reviews for the burger before save
     @burger = Burger.find(params[:review][:burger_id])
-    binding.pry
+    # binding.pry
     @burger.num_reviews += 1
     @burger.save
     @review.save

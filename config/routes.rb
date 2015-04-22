@@ -16,3 +16,20 @@ BurgerBuddy::Application.routes.draw do
   root 'burgers#index'
   
 end
+
+
+Reports:
+
+We need x, y, z
+Last Mamogram
+
+
+What is your med list?
+What are you allergies?
+Last routine screening/annual exam?
+What is you blood type?
+
+
+Reports for physicians
+Diabetics
+Summarize
