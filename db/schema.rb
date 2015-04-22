@@ -23,8 +23,8 @@ ActiveRecord::Schema.define(version: 20150422024535) do
     t.string   "bun_type"
     t.boolean  "grass_fed"
     t.boolean  "gluten_free"
-    t.decimal  "average_score"
-    t.decimal  "num_reviews"
+    t.integer  "average_score"
+    t.integer  "num_reviews",   default: 0, null: false
     t.text     "description"
     t.text     "special_notes"
     t.datetime "created_at"
