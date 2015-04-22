@@ -13,6 +13,10 @@
  *= require_tree .
  */
 
+ body {
+  background-color: #F2F7F7
+ }
+
 input, textarea, select, .uneditable-input {
   border: 1px solid #bbb;
   width: 100%;

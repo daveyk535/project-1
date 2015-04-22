@@ -27,7 +27,7 @@ burgers = Burger.create(burger_name: 'Prather Ranch Burger', price:18.00, protei
 
 
 # "patty", "bun", "bun_patty_ratio", "toppings", "service", "total", "user_id", "burger_id", "comments", "side"
-reviews = Review.create(patty: 5, bun: 3, bun_patty_ratio: 4, toppings: 3.5, service: 4.5, side: 5, comments: "Killer", burger_id: 3, user_id: 2)
+reviews = Review.create(patty: 5, bun: 3, bun_patty_ratio: 4, toppings: 3.5, comments: "Killer", burger_id: 3, user_id: 2)
 
 # "name", "address", "city", "state", "zip", "website", "phone"
 restaurants = Restaurant.create(name: "Wayfare Tavern", address: "558 Sacramento st.", city: "San Francisco", state: "CA", zip: "94111", website: "http://wayfaretavern.com", phone: "415-772-9060")
