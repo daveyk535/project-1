@@ -31,14 +31,3 @@ class RestaurantsController < ApplicationController
 
 end
 
-
-# [5] pry(#<RestaurantsController>)> @response.businesses[0].location.city
-# => "San Francisco"
-# [6] pry(#<RestaurantsController>)> @response.businesses[0].location.postal_code
-# => "94118"
-# [7] pry(#<RestaurantsController>)> @response.businesses[0].location.address
-# => ["3669 Sacramento St"]
-# [8] pry(#<RestaurantsController>)> @response.businesses[0].location.address[0]
-# => "3669 Sacramento St"
-# [9] pry(#<RestaurantsController>)> @response.businesses[0].location.state_code
-# => "CA"
