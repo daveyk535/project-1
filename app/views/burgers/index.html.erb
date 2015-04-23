@@ -1,9 +1,9 @@
 <div class="center">
-<h1> Welcome to BurgerBuddy </h1>
+  <h1> Welcome to BurgerBuddy </h1>
 </div>
 
 <div class="center">
-<h3> Current Standings - San Francisco </h3>
+  <h3> Current Standings - San Francisco </h3>
 </div>
 
 <!-- Show the rankings for the top 5 burgers in table format: -->
@@ -12,11 +12,11 @@
 		<th>Burger name</th>
   	<th>Restaurant</th> 
   	<th>Average score</th>
+    <th>Reviews</th>
 	</tr>
 <% @burgers.each do |burger| %>
   <tr>
     <td>
-      <!-- <p class="lead"><%= link_to(burger.burger_name) %></p> -->
       <p class="lead"><%= link_to (burger.burger_name), burger_path(burger.id) %></p>
     </td>
     <td>
@@ -24,6 +24,9 @@
     </td>
     <td>
     	<p class="lead"><%= burger.average_score %></p>
+    </td>
+    <td>
+      <p class="lead"><%= burger.num_reviews %></p>
     </td>
 </tr>
 <% end %>

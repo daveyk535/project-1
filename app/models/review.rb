@@ -2,8 +2,7 @@ class Review < ActiveRecord::Base
   belongs_to :burger
   belongs_to :user
 
-
-  def calc_total
+  def self.calc_total
     burgers = Burger.all
     burgers.each do |burger|
       total = 0
@@ -13,11 +12,10 @@ class Review < ActiveRecord::Base
         reviews.each do |review|
           # puts review.total
           total += review.total.to_f
-          average = (total / count).to_f
+          average = (total / count).round(1).to_f
         end
-        puts average
         burger.update_attributes(average_score: average)
     end
   end
 
-end
+end 
