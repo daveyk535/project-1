@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150422024535) do
+ActiveRecord::Schema.define(version: 20150423004020) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(version: 20150422024535) do
     t.string   "bun_type"
     t.boolean  "grass_fed"
     t.boolean  "gluten_free"
-    t.integer  "average_score"
+    t.float    "average_score"
     t.integer  "num_reviews",   default: 0, null: false
     t.text     "description"
     t.text     "special_notes"
