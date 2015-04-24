@@ -20,17 +20,17 @@ class ReviewsController < ApplicationController
     @burger.num_reviews += 1
     @burger.save
     @review.save
+    #Update each burger with new totals
     Review.calc_total
     redirect_to review_path(@review)
   end
 
-end
-
-private
+  private
     def review_params
       params.require(:review).permit(:patty, :bun, :bun_patty_ratio, :toppings, :wow_factor, :total, :comments, :burger_id)
     end
 
+end
 
 
 

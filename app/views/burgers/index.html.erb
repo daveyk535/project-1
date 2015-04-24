@@ -14,7 +14,7 @@
   	<th>Average score</th>
     <th>Reviews</th>
 	</tr>
-<% @burgers.each do |burger| %>
+  <% @sorted.each do |burger| %>
   <tr>
     <td>
       <p class="lead"><%= link_to (burger.burger_name), burger_path(burger.id) %></p>
