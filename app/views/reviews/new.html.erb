@@ -2,48 +2,20 @@
 <h1> Submit Review </h1>
 </div>
 
-<!-- Restaurant drop down -->
-<h4>Select a restaurant from the system:</h4>
-<%= form_for @restaurant, method: "post" do |f| %>
- <%= f.label :name %></br>
- <% restaurants = Restaurant.all.map {|restaurant| [restaurant.name, restaurant.id] }%>
- <%= f.select(:name, restaurants)  %> </br>
- <%#= f.submit "Add Restaurant", class: "button" %>
-<% end %>
 
-<!-- Burger drop down. Note that the restaurant and burger drop downs are not linked up yet. In future, the only burgers that drop down should be the ones belonging to the restaurant which has been selected above. -->
 
-<%= form_for(@review) do |f| %>
-  <%= f.label :burger_name, "Burger" %></br>
-  <% burgers = Burger.all.map {|burger| [burger.burger_name, burger.id] }%>
-  <%= f.select(:burger_id, burgers)  %> </br>
 
-<!-- If the user cannot find the restaurant and burger they want to review, direct them to a page to add restaurant and burger to the database: -->
- <p>Can't find your burger? Add it <%= link_to "here.", new_restaurant_path %></br></br>
+<%= form_for @burger do |f| %>
 
-<!-- Create the form for reviewing the burger: -->
-  
-  <div class="row">
-    <div class="col-xs-2">
-			<%= f.label :patty %>
-    	<%= f.select :patty, [ 1, 2, 3, 4, 5, 6, 7 ], :prompt => 'Select One' %>
+  <%= f.label :restaurant_id, 'Restaurant' %><br />
+  <%= f.collection_select :restaurant_id, Restaurant.order(:name), :id, :name, include_blank: true %>
 
-    	<%= f.label :bun %>
-      <%= f.select :bun, [ 1, 2, 3, 4, 5, 6, 7 ], :prompt => 'Select One' %>
+  <%#= f.label :burger_name %><br />
+  <%#= f.collection_select :burger_name, Burger.order(:burger_name), :id, :burger_name, include_blank: true %>
 
-      <%= f.label :bun_patty_ratio %>
-      <%= f.select :bun_patty_ratio, [ 1, 2, 3, 4, 5, 6, 7 ], :prompt => 'Select One' %>
+  <%= f.label :burger_name %><br />
+  <%= f.grouped_collection_select :burger_name, Restaurant.order(:name), :burgers, :name, :id, :burger_name, include_blank: true %>
 
-      <%= f.label :toppings %>
-      <%= f.select :toppings, [ 1, 2, 3, 4, 5, 6, 7 ], :prompt => 'Select One' %>
-
-      <%= f.label :wow_factor %>
-      <%= f.select :wow_factor, [ 1, 2, 3, 4, 5, 6, 7 ], :prompt => 'Select One' %>
-
-    </div>
-  </div>
-      <%= f.label :comments %>
-      <%= f.text_area :comments %></br>
-<%= f.submit "Submit Review", class: "btn btn-large btn-primary" %></br></br>
+<%= f.submit %>
 <% end %>
 
