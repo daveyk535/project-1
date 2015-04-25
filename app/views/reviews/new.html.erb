@@ -5,17 +5,17 @@
 
 
 
-<%= form_for @burger do |f| %>
+<%= form_for @review do |f| %>
 
-  <%= f.label :restaurant_id, 'Restaurant' %><br />
-  <%= f.collection_select :restaurant_id, Restaurant.order(:name), :id, :name, include_blank: true %>
+  <%#= f.label :restaurant_id, 'Restaurant' %><br />
+  <%#= f.collection_select :restaurant_id, Restaurant.order(:name), :id, :name, include_blank: true %>
 
   <%#= f.label :burger_name %><br />
-  <%#= f.collection_select :burger_name, Burger.order(:burger_name), :id, :burger_name, include_blank: true %>
+  <%#= f.grouped_collection_select :burger_name, Restaurant.order(:name), :burgers, :name, :id, :burger_name, include_blank: true %>
 
-  <%= f.label :burger_name %><br />
-  <%= f.grouped_collection_select :burger_name, Restaurant.order(:name), :burgers, :name, :id, :burger_name, include_blank: true %>
+  <%= f.label :burger_id %><br />
+  <%= f.grouped_collection_select :burger_id, Restaurant.order(:name), :burgers, :name, :id, :burger_name, include_blank: true %>
 
-<%= f.submit %>
+  
+  <%= f.submit "Submit Review", class: "btn btn-large btn-primary" %></br></br>
 <% end %>
-
