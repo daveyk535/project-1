@@ -7,15 +7,33 @@
 
 <%= form_for @review do |f| %>
 
-  <%#= f.label :restaurant_id, 'Restaurant' %><br />
-  <%#= f.collection_select :restaurant_id, Restaurant.order(:name), :id, :name, include_blank: true %>
-
-  <%#= f.label :burger_name %><br />
-  <%#= f.grouped_collection_select :burger_name, Restaurant.order(:name), :burgers, :name, :id, :burger_name, include_blank: true %>
+  <%= f.label :restaurant_id %><br />
+  <%= f.collection_select :restaurant_id, Restaurant.order(:name), :id, :name, include_blank: true %>
 
   <%= f.label :burger_id %><br />
   <%= f.grouped_collection_select :burger_id, Restaurant.order(:name), :burgers, :name, :id, :burger_name, include_blank: true %>
 
+  <div class="row">
+    <div class="col-xs-2">
+      <%= f.label :patty %>
+      <%= f.select :patty, [ 1, 2, 3, 4, 5, 6, 7 ], :prompt => 'Select One' %>
+
+      <%= f.label :bun %>
+      <%= f.select :bun, [ 1, 2, 3, 4, 5, 6, 7 ], :prompt => 'Select One' %>
+
+      <%= f.label :bun_patty_ratio %>
+      <%= f.select :bun_patty_ratio, [ 1, 2, 3, 4, 5, 6, 7 ], :prompt => 'Select One' %>
+
+      <%= f.label :toppings %>
+      <%= f.select :toppings, [ 1, 2, 3, 4, 5, 6, 7 ], :prompt => 'Select One' %>
+
+      <%= f.label :wow_factor %>
+      <%= f.select :wow_factor, [ 1, 2, 3, 4, 5, 6, 7 ], :prompt => 'Select One' %>
+    </div>
+  </div>
+
+      <%= f.label :comments %>
+      <%= f.text_area :comments %></br>
   
   <%= f.submit "Submit Review", class: "btn btn-large btn-primary" %></br></br>
 <% end %>

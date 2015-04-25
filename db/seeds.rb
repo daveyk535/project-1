@@ -10,9 +10,6 @@ users = User.create(first_name: "Joel", last_name: "Korsunsky", email: "jkorsuns
 
 users = User.create(first_name: "David", last_name: "Korsunsky", email: "davekorsunsky@gmail.com", twitter: "@phase2mind", password: "foobar", password_confirmation: "foobar")
 
-# "burger_name", "price", "protein", "bun_type", "grass_fed", "gluten_free", "average_score", "num_reviews", "description", "special_notes" 
-
-
 
 burgers = Burger.create(burger_name: 'le grande', price:20.00, protein: 'grass-fed proprietary', bun_type: 'Brioche', grass_fed: true, gluten_free: false, description: 'Grass-fed proprietary grind, Marin brie, roasted onion, smoked bacon, brioche', special_notes: 'Add sunny-side-up Petaluma egg for $2', average_score: 29.5, restaurant_id: 1)
 
@@ -25,9 +22,7 @@ burgers = Burger.create(burger_name: 'Marlowe Burger', price:14.00, protein: 'Ce
 burgers = Burger.create(burger_name: 'Prather Ranch Burger', price:18.00, protein: 'Certified Angus', bun_type: 'Sesame Seed Challah Bun', grass_fed: true, gluten_free: false, description: 'house cut fries & pickle, grilled sesame seed challah bun 13 ', special_notes: 'add white cheddar or Pt. Reyes blue, starbelly bacon, avocado or roasted onions for 2 each', average_score: 25.0, restaurant_id: 5)
 
 
-
-# "patty", "bun", "bun_patty_ratio", "toppings", "service", "total", "user_id", "burger_id", "comments", "side"
-reviews = Review.create(patty: 5, bun: 3, bun_patty_ratio: 4, toppings: 3.5, comments: "Killer", burger_id: 3, user_id: 2)
+# reviews = Review.create(patty: 5, bun: 3, bun_patty_ratio: 4, toppings: 3.5, comments: "Killer", burger_id: 3, user_id: 2)
 
 # "name", "address", "city", "state", "zip", "website", "phone"
 restaurants = Restaurant.create(name: "Wayfare Tavern", address: "558 Sacramento st.", city: "San Francisco", state: "CA", zip: "94111", website: "http://wayfaretavern.com", phone: "415-772-9060")
