@@ -1,39 +1,78 @@
-<div class="center">
-<h1> Submit Review </h1>
+
+<div id="review-title" class="container-fluid">
+  <h1>
+    Rate a Burger
+  </h1>
+  <h3>
+    Please empart your burger wisdom upon us all
+  </h3>
 </div>
 
-
-
-
-<%= form_for @review do |f| %>
-
-  <%= f.label :restaurant_id %><br />
-  <%= f.collection_select :restaurant_id, Restaurant.order(:name), :id, :name, include_blank: true %>
-
-  <%= f.label :burger_id %><br />
-  <%= f.grouped_collection_select :burger_id, Restaurant.order(:name), :burgers, :name, :id, :burger_name, include_blank: true %>
-
+<!-- Form for reviewing burger -->
+<!-- Step 1 -->
+<div class="center">
+  <h1> 
+    Step 1: Select burger 
+  </h1>
+</div>
+<div class="container">
   <div class="row">
-    <div class="col-xs-2">
-      <%= f.label :patty %>
-      <%= f.select :patty, [ 1, 2, 3, 4, 5, 6, 7 ], :prompt => 'Select One' %>
+    <div class="span12" id="review-form">
+      <%= form_for @review do |f| %>
+        <%= f.label :restaurant_id %><br />
+        <%= f.collection_select :restaurant_id, Restaurant.order(:name), :id, :name, include_blank: true %>
 
-      <%= f.label :bun %>
-      <%= f.select :bun, [ 1, 2, 3, 4, 5, 6, 7 ], :prompt => 'Select One' %>
+        <%= f.label :burger_id %><br />
+        <%= f.grouped_collection_select :burger_id, Restaurant.order(:name), :burgers, :name, :id, :burger_name, include_blank: true %>
 
-      <%= f.label :bun_patty_ratio %>
-      <%= f.select :bun_patty_ratio, [ 1, 2, 3, 4, 5, 6, 7 ], :prompt => 'Select One' %>
+        <!-- Step 2 -->
+        <div class="center">
+          <h1> 
+            Step 2: Evaluate burger 
+          </h1>
+        </div>      
+      
+        <%= f.label :patty %>
+        <%= f.select :patty, [ 1, 2, 3, 4, 5, 6, 7 ], :prompt => 'Select One' %>
 
-      <%= f.label :toppings %>
-      <%= f.select :toppings, [ 1, 2, 3, 4, 5, 6, 7 ], :prompt => 'Select One' %>
+        <%= f.label :bun %>
+        <%= f.select :bun, [ 1, 2, 3, 4, 5, 6, 7 ], :prompt => 'Select One' %>
 
-      <%= f.label :wow_factor %>
-      <%= f.select :wow_factor, [ 1, 2, 3, 4, 5, 6, 7 ], :prompt => 'Select One' %>
+        <%= f.label :bun_patty_ratio %>
+        <%= f.select :bun_patty_ratio, [ 1, 2, 3, 4, 5, 6, 7 ], :prompt => 'Select One' %>
+
+        <%= f.label :toppings %>
+        <%= f.select :toppings, [ 1, 2, 3, 4, 5, 6, 7 ], :prompt => 'Select One' %>
+
+        <%= f.label :wow_factor %>
+        <%= f.select :wow_factor, [ 1, 2, 3, 4, 5, 6, 7 ], :prompt => 'Select One' %>
     </div>
-  </div>
+    </div>
+  </div>  
 
-      <%= f.label :comments %>
-      <%= f.text_area :comments %></br>
-  
-  <%= f.submit "Submit Review", class: "btn btn-large btn-primary" %></br></br>
-<% end %>
+        <!-- Step 3 -->  
+        <div class="center">
+          <h1> 
+            Step 3 (Optional): Add comments
+          </h1>
+        </div>  
+
+        <div class="container">
+          <div class="row">
+            <div class="span12" id="review-comments">
+              <%= f.label :comments %>
+              <%= f.text_area :comments %></br>
+            </div>
+          </div>
+        </div>
+
+        <div class="span12" id="review-button">
+          <%= f.submit "Submit Review", class: "btn btn-large btn-primary" %></br></br>
+        <% end %> 
+        </div>
+
+
+
+
+
+

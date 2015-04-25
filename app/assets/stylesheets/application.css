@@ -45,6 +45,12 @@ input {
   @extend .error;
 }
 
+/*Navbar*/
+/*#nav-talleeup {
+  background-color: #145A8B;
+  height: 110px
+}*/
+
 /*CSS for the restaurant views:*/
 /*search.html.erb: */
 .restaurant_table {
@@ -62,18 +68,4 @@ input {
 }
 
 /*CSS for the review views:*/
-/*search.html.erb: */
 
-.review {
-  text-align: center;
-}
-
-.center {
-  text-align: center;
-}
-
-
-.center-table {
-  margin: 0 auto !important;
-  float: none !important;
-}
