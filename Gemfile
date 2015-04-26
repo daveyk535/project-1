@@ -9,10 +9,6 @@ gem 'sprockets', '2.11.0'
 # Use PostGres as the DB
 gem 'pg'
 
-gem 'yelpster'
-
-gem 'yelp', require: 'yelp'
-
 gem 'typhoeus'
 
 #Use bcrypt for password hash
