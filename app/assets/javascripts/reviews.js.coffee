@@ -2,30 +2,17 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 jQuery ->
-	# $('#burger_burger_name').hide()
+	# $('#burger_field').hide()
+	# $('#ratings').hide()
 	burgers = $('#review_burger_id').html()
 	$('#review_restaurant_id').change ->
 		restaurant = $('#review_restaurant_id :selected').text()
 		options = $(burgers).filter("optgroup[label='#{restaurant}']").html()
 		if options
 			$('#review_burger_id').html(options)
-			# $('#burger_burger_name').show()
+			# $('#burger_field').show()
+			# $('#ratings').show()
 		else
-			$('#review_burger_id').empty()
-			# $('#burger_burger_name').hide()
-
-
-
-
-# jQuery ->
-# 	# $('#burger_burger_name').hide()
-# 	burgers = $('#burger_burger_name').html()
-# 	$('#burger_restaurant_id').change ->
-# 		restaurant = $('#burger_restaurant_id :selected').text()
-# 		options = $(burgers).filter("optgroup[label='#{restaurant}']").html()
-# 		if options
-# 			$('#burger_burger_name').html(options)
-# 			# $('#burger_burger_name').show()
-# 		else
-# 			$('#burger_burger_name').empty()
-# 			# $('#burger_burger_name').hide()
+			# $('#burger_field').empty()
+			# $('#burger_field').hide()
+			# $('#ratings').hide()
