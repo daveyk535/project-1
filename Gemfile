@@ -41,7 +41,7 @@ group :doc do
 end
 
 group :development, :test do
-  gem 'dotenv-rails'
+  
   gem 'pry'
   gem 'rspec-rails'
   gem 'factory_girl_rails'
@@ -61,6 +61,7 @@ group :production do
   gem 'rails_12factor'
 end
 
+gem 'dotenv-rails'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
