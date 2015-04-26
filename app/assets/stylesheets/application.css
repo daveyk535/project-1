@@ -28,6 +28,7 @@ input {
 }
 
 .gravatar {
+  margin-top: 150px;
   float: left;
   margin-right: 10px;
 }
@@ -46,10 +47,39 @@ input {
 }
 
 /*Navbar*/
-/*#nav-talleeup {
-  background-color: #145A8B;
-  height: 110px
-}*/
+
+.logo {
+  height: 55px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+}
+
+nav form {
+  /*margin: 0 auto;*/
+  text-align: center;
+  display: inline-block;
+}
+
+nav {
+  display: inline;
+}
+
+nav form button {
+  margin-bottom: 6px;
+}
+
+#test99 {
+  display: inline-block;
+}
+
+nav input {
+  margin-top: 10px;
+}
+
+#account {
+  display: inline-block;
+  margin-top: 10px;
+}
 
 /*CSS for the restaurant views:*/
 /*search.html.erb: */

@@ -2043,6 +2043,7 @@ fieldset[disabled] .btn {
   color: #333;
   background-color: #fff;
   border-color: #ccc;
+  margin-bottom: 6px
 }
 .btn-default:hover,
 .btn-default:focus,
@@ -4022,7 +4023,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: #333;
 }
 .navbar-inverse {
-  background-color: #222;
+  background-color: #145A8B;
   border-color: #080808;
 }
 .navbar-inverse .navbar-brand {
