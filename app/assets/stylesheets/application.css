@@ -13,8 +13,13 @@
  *= require_tree .
  */
 
+/*General styling*/
  body {
   background-color: #F2F7F7
+ }
+
+ .center {
+  text-align: center;
  }
 
 input, textarea, select, .uneditable-input {

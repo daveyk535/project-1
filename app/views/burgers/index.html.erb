@@ -16,8 +16,8 @@
     	<tr>
     		<th>Burger name</th>
       	<th>Restaurant</th> 
-      	<th>Average score</th>
-        <th>Reviews</th>
+      	<th class="center">Average score</th>
+        <th class="center">Reviews</th>
     	</tr>
       <% @sorted.each do |burger| %>
       <tr>
@@ -28,10 +28,10 @@
           <p class="lead"><%= link_to(burger.restaurant.name) %></p>
         </td>
         <td>
-        	<p class="lead"><%= burger.average_score %></p>
+        	<p class="lead center"><%= burger.average_score %></p>
         </td>
         <td>
-          <p class="lead"><%= burger.num_reviews %></p>
+          <p class="lead center"><%= burger.num_reviews %></p>
         </td>
     </tr>
     <% end %>
