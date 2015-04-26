@@ -1,7 +1,7 @@
 BurgerBuddy::Application.configure do
 
   config.force_ssl = true
-  
+  config.secret_key_base = ENV["SECRET_KEY_BASE"]
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
