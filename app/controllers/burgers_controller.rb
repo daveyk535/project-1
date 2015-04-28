@@ -12,5 +12,10 @@ class BurgersController < ApplicationController
     @burger = Burger.find(params[:id])
   end
 
+  def home
+    @burgers = Burger.all
+    @sorted = Burger.all.order('average_score DESC')
+  end
+
 end
 

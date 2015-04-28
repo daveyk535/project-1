@@ -13,7 +13,8 @@ BurgerBuddy::Application.routes.draw do
 
   match '/review', to: 'reviews#new', via: 'get'
 
-  root 'burgers#index'
+  root 'burgers#home'
   
+  get '/home', to: 'burgers#home'
 end
 

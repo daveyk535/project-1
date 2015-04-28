@@ -1,11 +1,11 @@
     
-    
+
     <div id="bk-image">
     </div>
 
-    <!-- <div class="center mont">
+    <div class="center mont">
       <h1> Welcome to TalleeUp </h1>
-    </div> -->
+    </div>
 
     <div class="center mont2">
       <h3> Current Standings - San Francisco </h3>
@@ -37,4 +37,15 @@
     <% end %>
     </table>
 
-    
+    <div class="center">
+      <% if signed_in? %>
+        <%= link_to "View Full Rankings", burgers_path %></br></br>  
+        <%= link_to "Review a burger!", new_review_path, class: "btn btn-large btn-primary" %>
+        <% else %>
+          <%= link_to "View Full Rankings", signup_path %></br></br>  
+          <%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
+          <%= link_to "Review a burger!", signup_path, class: "btn btn-large btn-primary" %>
+      <% end %>
+    </div>
+
+ 
