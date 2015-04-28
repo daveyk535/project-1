@@ -12,32 +12,32 @@
   <div class="row">
     <div class="span12" id="review-form">
       <%= form_for @review do |f| %>
-        <%= f.label :restaurant_id %><br />
+        <%= f.label :restaurant_id, :class => 'mont3' %><br />
         <%= f.collection_select :restaurant_id, Restaurant.order(:name), :id, :name, include_blank: true %>
 
-        <%= f.label :burger_id %><br />
+        <%= f.label :burger_id, :class => 'mont3' %><br />
         <%= f.grouped_collection_select :burger_id, Restaurant.order(:name), :burgers, :name, :id, :burger_name, include_blank: true %>
 
         <!-- Step 2 -->
         <div class="center">
-          <h1> 
-            Step 2: Evaluate burger 
+          <h1 class="mont"> 
+            Step 2: Rate burger 
           </h1>
         </div>      
       
-        <%= f.label :patty %>
+        <%= f.label :patty, :class => 'mont3' %>
         <%= f.select :patty, [ 1, 2, 3, 4, 5, 6, 7 ], :prompt => 'Select One' %>
         
-        <%= f.label :bun %>
+        <%= f.label :bun, :class => 'mont3' %>
         <%= f.select :bun, [ 1, 2, 3, 4, 5, 6, 7 ], :prompt => 'Select One' %>
 
-        <%= f.label :bun_patty_ratio %>
+        <%= f.label :bun_patty_ratio, :class => 'mont3' %>
         <%= f.select :bun_patty_ratio, [ 1, 2, 3, 4, 5, 6, 7 ], :prompt => 'Select One' %>
 
-        <%= f.label :toppings %>
+        <%= f.label :toppings, :class => 'mont3' %>
         <%= f.select :toppings, [ 1, 2, 3, 4, 5, 6, 7 ], :prompt => 'Select One' %>
 
-        <%= f.label :wow_factor %>
+        <%= f.label :wow_factor, :class => 'mont3' %>
         <%= f.select :wow_factor, [ 1, 2, 3, 4, 5, 6, 7 ], :prompt => 'Select One' %>
     </div>
     </div>
@@ -45,7 +45,7 @@
 
         <!-- Step 3 -->  
         <div class="center">
-          <h1> 
+          <h1 class="mont"> 
             Step 3 (Optional): Add comments
           </h1>
         </div>  
@@ -53,14 +53,14 @@
         <div class="container">
           <div class="row">
             <div class="span12" id="review-comments">
-              <%= f.label :comments %>
+              <%= f.label :comments, :class => 'mont3' %>
               <%= f.text_area :comments %></br>
             </div>
           </div>
         </div>
 
         <div class="span12" id="review-button">
-          <%= f.submit "Submit Review", class: "btn btn-large btn-primary" %></br></br>
+          <%= f.submit "BOOMSHAKALAKA", class: "btn btn-large btn-primary" %></br></br>
         <% end %> 
         </div>
 
