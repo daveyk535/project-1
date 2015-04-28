@@ -73,9 +73,6 @@ nav form button {
   margin-bottom: 6px;
 }
 
-#test99 {
-  display: inline-block;
-}
 
 nav input {
   margin-top: 10px;
@@ -86,23 +83,8 @@ nav input {
   margin-top: 10px;
 }
 
-/*CSS for the restaurant views:*/
-/*search.html.erb: */
-.restaurant_table {
-  font-size: 30px;
-}
 
-.restaurant {
-  width: 718px;
-  height: 200px;
-  text-align: left;
-}
-
-.table-striped {
-  height: 150px;
-}
-
-/*Montserrat font used throughout*/
+/*Custom fonts used throughout the app*/
 
 .mont {
   font-family: 'Montserrat', sans-serif;
@@ -116,6 +98,7 @@ nav input {
   font-size: 32px
 }
 
+
 .mont3 {
   font-family: 'Montserrat', sans-serif;
   color: #13598A;
@@ -128,3 +111,18 @@ nav input {
   font-size: 14px
 }
 
+
+/*Placeholder div to deal with problem where navbar is not being honored. Fix this later.*/
+#bk-image {
+  height: 100px;
+}
+
+/*Unknown styles to be re-factored*/
+.center-table {
+  margin: 0 auto !important;
+  float: none !important;
+}
+
+#test99 {
+  display: inline-block;
+}

@@ -2,7 +2,16 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.restaurant_table {
+  font-size: 30px;
+}
 
-test2 {
-	
+.restaurant {
+  width: 718px;
+  height: 200px;
+  text-align: left;
+}
+
+.table-striped {
+  height: 150px;
 }
