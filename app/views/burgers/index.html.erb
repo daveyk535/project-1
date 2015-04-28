@@ -38,9 +38,14 @@
     </table>
 
     <div class="center">
-    <%= link_to "View Full Rankings", signup_path %></br></br>  
-    <%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
-    <%= link_to "Review a burger!", new_review_path, class: "btn btn-large btn-primary" %>
+      <% if signed_in? %>
+        <%= link_to "View Full Rankings", root_path %></br></br>  
+        <%= link_to "Review a burger!", new_review_path, class: "btn btn-large btn-primary" %>
+        <% else %>
+          <%= link_to "View Full Rankings", signup_path %></br></br>  
+          <%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
+          <%= link_to "Review a burger!", signup_path, class: "btn btn-large btn-primary" %>
+      <% end %>
     </div>
 
  
