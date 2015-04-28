@@ -1,12 +1,19 @@
-<br />
-<br />
-<br />
+<div id="bk-image">
+</div>
 
 <%= gravatar_for @user %>
-<table>
-	<tr><td><%= @user.first_name %> <%= @user.last_name %></td></tr>
-	<tr><td><%= @user.email %></td></tr>
-	<tr><td><%= @user.twitter %></td></tr>
-</table></br></br></br></br>
+<p> <%= @user.first_name %> <%= @user.last_name %> </p>
+<p> <%= @user.email %> </p>
+<p> <%= @user.twitter %></p>
 <%= link_to "Review a burger", new_review_path, class: "btn btn-large btn-primary" %>
 <%= link_to "Back to rankings", root_path, class: "btn btn-large btn-primary" %>
+
+
+
+<!-- <table>
+	<tr><td><%#= @user.first_name %> <%= @user.last_name %></td></tr>
+	<tr><td><%#= @user.email %></td></tr>
+	<tr><td><%#= @user.twitter %></td></tr>
+</table></br></br></br></br>
+ --><%#= link_to "Review a burger", new_review_path, class: "btn btn-large btn-primary" %>
+<%#= link_to "Back to rankings", root_path, class: "btn btn-large btn-primary" %>

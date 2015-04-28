@@ -32,11 +32,6 @@ input {
   height: auto !important;
 }
 
-.gravatar {
-  margin-top: 150px;
-  float: left;
-  margin-right: 10px;
-}
 
 #error_explanation {
   color: #f00;
