@@ -32,7 +32,6 @@ input {
   height: auto !important;
 }
 
-
 #error_explanation {
   color: #f00;
   ul {
@@ -93,7 +92,6 @@ nav input {
   font-size: 32px
 }
 
-
 .mont3 {
   font-family: 'Montserrat', sans-serif;
   color: #13598A;
@@ -104,6 +102,12 @@ nav input {
   font-family: 'Montserrat', sans-serif;
   color: #13598A;
   font-size: 14px
+}
+
+.mont5 {
+  color: #87898b;
+  font-size: 24px;
+  white-space: pre-wrap;  
 }
 
 
