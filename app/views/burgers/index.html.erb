@@ -25,7 +25,7 @@
           <p class="lead"><%= link_to (burger.burger_name), burger_path(burger.id) %></p>
         </td>
         <td>
-          <p class="lead"><%= link_to(burger.restaurant.name) %></p>
+          <p class="lead"><%= burger.restaurant.name %></p>
         </td>
         <td>
         	<p class="lead center"><%= burger.average_score %></p>
