@@ -1,0 +1,7 @@
+DATABASE_URL="postgres://izegyaxsfwbmyy:eetxVN2jsrsQwwZd6Agh8NSPJd@ec2-54-243-187-196.compute-1.amazonaws.com:5432/d52cb6gbesp53g"
+HEROKU_POSTGRESQL_CRIMSON_URL="postgres://izegyaxsfwbmyy:eetxVN2jsrsQwwZd6Agh8NSPJd@ec2-54-243-187-196.compute-1.amazonaws.com:5432/d52cb6gbesp53g"
+LANG="en_US.UTF-8"
+RACK_ENV="production"
+RAILS_ENV="production"
+SECRET_KEY_BASE="aac7ae0d44d3bbb04112f37aeb999cea3d6c18aba450505ae6bd9a8360ed1359940831d81e94602298e0600a6211dbafdc19a269579419756e0f06e98b1a49a7"
+
