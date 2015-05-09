@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150425040857) do
+ActiveRecord::Schema.define(version: 20150501030132) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,12 +24,14 @@ ActiveRecord::Schema.define(version: 20150425040857) do
     t.boolean  "grass_fed"
     t.boolean  "gluten_free"
     t.float    "average_score"
-    t.integer  "num_reviews",   default: 0, null: false
+    t.integer  "num_reviews",      default: 0, null: false
     t.text     "description"
     t.text     "special_notes"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "restaurant_id"
+    t.boolean  "NitrateFreeBacon"
+    t.boolean  "organic_toppings"
   end
 
   create_table "restaurants", force: true do |t|

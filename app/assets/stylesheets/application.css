@@ -45,37 +45,6 @@ input {
   @extend .error;
 }
 
-/*Navbar*/
-
-.logo {
-  height: 55px;
-  padding-bottom: 20px;
-  padding-left: 30px;
-}
-
-nav form {
-  /*margin: 0 auto;*/
-  text-align: center;
-  display: inline-block;
-}
-
-nav {
-  display: inline;
-}
-
-nav form button {
-  margin-bottom: 6px;
-}
-
-
-nav input {
-  margin-top: 10px;
-}
-
-#account {
-  display: inline-block;
-  margin-top: 10px;
-}
 
 
 /*Custom fonts used throughout the app*/
