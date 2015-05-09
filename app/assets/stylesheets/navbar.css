@@ -1,0 +1,36 @@
+/*Navbar*/
+/*Scratch area*/
+nav {
+  height: 72px;
+  text-align: center;
+}
+
+nav .btn-primary {
+  background-color: #fccf0f;
+  color: #145a8b;
+  margin-top: 20px;
+  margin-left: -127px;
+}
+
+
+.form-control {
+  display: inline-block;
+  width: 9%;
+}
+
+
+/*end scratch area*/
+
+.logo {
+  height: 55px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+}
+
+/*
+
+#account {
+  display: inline-block;
+  margin-top: 10px;
+}
+*/
